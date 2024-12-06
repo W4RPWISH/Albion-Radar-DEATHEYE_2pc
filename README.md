@@ -19,7 +19,7 @@
 
 1. Качаем релиз из вкладки Releases
 2. Сопрягаем устройства - Основной ПК и "Прокладку", как это сделать смотрите тут https://www.youtube.com/@W4RPWISH
-3. Качаем NPCAP на Прокладку [https://npcap.com/](https://npcap.com/dist/npcap-1.80.exe)
+3. Качаем NPCAP на Прокладку https://npcap.com/dist/npcap-1.80.exe
 4. Запускаем Радар на прокладке
 5. Запускаем Альбион на Мэйн ПК
 
