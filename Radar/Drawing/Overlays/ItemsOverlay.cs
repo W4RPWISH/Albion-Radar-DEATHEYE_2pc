@@ -22,7 +22,6 @@ namespace X975.Radar.Drawing.Overlays
         {
             FPS = 20;
             IsTopmost = true;
-            IsTransparent = true;
             IsVisible = true;
             Width = Additions.GetDisplayResolution().Width;
             Height = Additions.GetDisplayResolution().Height;

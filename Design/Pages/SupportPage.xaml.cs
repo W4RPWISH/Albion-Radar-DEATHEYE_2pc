@@ -17,7 +17,7 @@ namespace X975.Pages
             switch ((e.Source as Button).Tag)
             {
                 case "Discord":
-                    System.Diagnostics.Process.Start("https://discord.gg/6vtJqWtDyt");
+                    System.Diagnostics.Process.Start("https://discord.gg/8byNr7TDma");
                     break;
 
                 case "Website":

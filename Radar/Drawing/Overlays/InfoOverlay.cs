@@ -18,7 +18,6 @@ namespace X975.Radar.Drawing.Overlays
         {
             FPS = 20;
             IsTopmost = true;
-            IsTransparent = true;
             IsVisible = true;
             Width = 500;
             Height = 60;
