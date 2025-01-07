@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using X975.Settings;
-using X975.Tools;
 
 namespace X975.Radar.OverlaySettings
 {
@@ -33,7 +32,7 @@ namespace X975.Radar.OverlaySettings
             _brushes["Red"] = gfx.CreateSolidBrush(255, 0, 0);
             _brushes["UnderHealth"] = gfx.CreateSolidBrush(120, 117, 117);
 
-            _itemImage.Add("T1_TRASH", gfx.CreateImage(Pathfinder.mainFolder + "\\ITEMS\\T1_TRASH.png"));
+            _itemImage.Add("T1_TRASH", gfx.CreateImage(@"items\T1_TRASH.png"));
         }
     }
 }

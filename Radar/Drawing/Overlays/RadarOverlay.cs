@@ -40,10 +40,9 @@ namespace X975.Radar.Drawing.Overlays
         {
             FPS = 144;
             IsTopmost = true;
-            IsTransparent = true;
             IsVisible = true;
-            Width = 1;
-            Height = 1;
+            Width = 400;
+            Height = 400;
             X = 0;
             Y = 0;
 
@@ -80,18 +79,17 @@ namespace X975.Radar.Drawing.Overlays
         {
             await brushesDictionary.UpdateColors();
             await hudDrawerer.DrawAsync();
+            await overlaySettings.PrepareDraw();
 
             if (localPlayerHandler.localPlayer.CurrentCluster.ClusterColor != ClusterColor.Unknown)
             {
-                await overlaySettings.PrepareDraw();
-
                 await harvestablesDrawerer.DrawAsync();
                 await mobsDrawerer.DrawAsync();
                 await gatedWispsDrawerer.DrawAsync();
                 await lootChestsDrawerer.DrawAsync();
                 await fishNodesDrawerer.DrawAsync();
                 await dungeonsDrawerer.DrawAsync();
-                //await playersDrawerer.DrawAsync();
+                await playersDrawerer.DrawAsync();
             }
 
             await overlaySettings.EndDraw();

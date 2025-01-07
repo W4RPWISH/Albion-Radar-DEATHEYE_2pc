@@ -1,13 +1,11 @@
 ﻿using X975.Settings;
 using X975.Radar.GameObjects.Mobs;
-using X975.Radar.GameObjects.Players;
 using X975.Radar.Drawing.OverlaySettings;
 using X975.Radar.Utility;
 using System.Numerics;
 using GameOverlay.Drawing;
 using System;
 using System.Threading.Tasks;
-using System.Linq;
 using X975.Radar.GameObjects.LocalPlayer;
 
 namespace X975.Radar.Drawers
@@ -38,10 +36,6 @@ namespace X975.Radar.Drawers
                 foreach (Mob m in mobsHandler.mobsList.Values)
                 {
                     Vector2 pos = (m.Position - localPlayerHandler.localPlayer.Position).Rotate();
-
-                    gfx.DrawIconDot(brushesDictionary._chargesColors[1], brushesDictionary._mobsImages["DRONE"], pos, Convert.ToSingle(configHandler.config.DroneMobs[1]));
-
-                    continue;
 
                     if (m.MobInfo != null)
                     {
